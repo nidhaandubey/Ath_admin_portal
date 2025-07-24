@@ -9,12 +9,12 @@ This project simulates a **real enterprise tracking use-case** and demonstrates 
 ## 📱 App Screenshots
 
 ### 📋 Dashboard – List of Employees
-Shows all tracked employees fetched from backend API.
 <img src="./img/dashboard.png" width="300"/>
+Shows all tracked employees fetched from backend API.
 
 ### 🗺️ Tracking History – Route on Map with Timestamps
-Displays the executive’s movement using Google Maps with accurate markers, lines, and logs.
 <img src="./img/tracking.png" width="300"/>
+Displays the executive’s movement using Google Maps with accurate markers, lines, and logs.
 
 ---
 
@@ -71,40 +71,26 @@ Edit
 ## ⚙️ How to Run the Project Locally
 
 ### 1. Clone the Repository
-
-```bash
 git clone https://github.com/nidhaandubey/Ath_admin_portal.git
 cd Ath_admin_portal
-2. Install Dependencies
-bash
-Copy
-Edit
+
+### 2. Install Dependencies
 npm install
-3. Start Metro Bundler
-bash
-Copy
-Edit
+
+### 3. Start Metro Bundler
 npx react-native start
-4. Run on Android Device
-bash
-Copy
-Edit
+
+## 4. Run on Android Device
 npx react-native run-android
+
 📱 Make sure your emulator or physical Android device is connected.
 
 📦 API Used
 Get Tracking History of Employee
-
-http
-Copy
-Edit
-GET /LocationTrack/GetEmplLocationTrack?empID={id}
+GET /LocationTrack/GetEmpl******ationTrack?empID={id}
 Get Last Known Location
+GET /LocationTrack/GetEmpl******ation?empID={id}
 
-http
-Copy
-Edit
-GET /LocationTrack/GetEmplLastLocation?empID={id}
 💼 Use Case Scenario
 This project is built to simulate a real-world field staff tracking system, where:
 
