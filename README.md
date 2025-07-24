@@ -1,58 +1,113 @@
-# 🛰️ Admin Portal - Sales Executive Location Tracking App
+# 🛰️ Admin Portal: Sales Executive Location Tracking App
 
-A complete **Admin Tracking App** built using **React Native** that allows managers to track their sales executives' movements on a live map, view route history, and access logged coordinates with timestamps.
+A React Native Admin Panel designed to **track sales executives’ live location and route history**. The app fetches location data from a real-time API and displays it on a map with proper markers, polylines, and timestamps.
 
----
-
-## 📱 Screenshots
-
-### Dashboard – List of Employees
-<img src=".img/Screenshot 2025-07-24 110355.png" width="300"/>
-
-### Tracking History – Route on Map with History
-<img src=".img/Screenshot 2025-07-24 110444.png" width="300"/>
+This project simulates a **real enterprise tracking use-case** and demonstrates your ability to build powerful, production-ready mobile applications using native technologies.
 
 ---
 
-## 🚀 Features
+## 📱 App Screenshots
 
-- 🔐 **Login System** for admin access
-- 📋 **Dashboard** showing all employees by ID
-- 🗺️ **Map View** with Polyline to display travel route
-- 📌 **Markers** for each location update
-- 🕒 **Timestamped Location Logs**
-- 🌐 **Google Maps Integration**
-- ⚙️ Powered by real-time API to fetch location tracking data
+### 📋 Dashboard – List of Employees
+<img src="./img/dashboard.png" width="300"/>
+Shows all tracked employees fetched from backend API.
 
----
-
-## 💼 Why This Project Stands Out
-
-- ✅ Real-world functionality simulating enterprise use-cases
-- ✅ Follows modular structure with clean React Native components
-- ✅ Built using native maps, making it lightweight and fast
-- ✅ Demonstrates frontend integration with live backend API
-- ✅ Great example of combining **maps**, **REST API**, and **state management**
+### 🗺️ Tracking History – Route on Map with Timestamps
+<img src="./img/tracking.png" width="300"/>
+Displays the executive’s movement using Google Maps with accurate markers, lines, and logs.
 
 ---
 
-## 🧰 Tech Stack
+## ✨ Key Features
 
-- **Frontend:** React Native CLI
-- **Navigation:** React Navigation
-- **Maps:** `react-native-maps` with Google Maps
-- **API Calls:** Axios
-- **Platform:** Android
-- **State Management:** useState & useEffect
+- 🔐 **Admin Login** with session-based access (coming soon)
+- 📋 **Dashboard Screen** to display employee list (with empID)
+- 📍 **Live Location Tracking** of individual sales executives
+- 🗺️ **Map View** using `react-native-maps` with:
+  - Markers for each location update
+  - Polylines to connect the movement route
+- 🕒 **Location Log Section** with latitude, longitude, and timestamp
+- ⚙️ Clean component-based code structure
+- ⚡ Powered by live backend API (`GET /LocationTrack/GetEmplLocationTrack?empID=`)
 
 ---
 
-## 📂 Folder Structure
+## 💻 Tech Stack
 
+| Area             | Technology                     |
+|------------------|--------------------------------|
+| Mobile Framework | React Native (CLI setup)       |
+| Maps             | `react-native-maps` (Google)   |
+| API Handling     | Axios                          |
+| UI Components    | React Native Views & Styles    |
+| Navigation       | `@react-navigation/native`     |
+| Backend API      | External REST endpoint         |
+| Platform         | Android                        |
 
+---
 
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+## 🏗️ Project Structure
+
+Admin_ath/
+├── App.jsx
+├── api.js
+├── DashboardScreen.jsx
+├── LoginScreen.jsx
+├── TrackingHistoryScreen.jsx
+├── index.js
+├── img/
+│ ├── dashboard.png
+│ └── tracking.png
+├── package.json
+├── android/
+└── README.md
+
+---
+
+## ⚙️ How to Run the Project Locally
+
+### 1. Clone the Repository
+git clone https://github.com/nidhaandubey/Ath_admin_portal.git
+cd Ath_admin_portal
+
+### 2. Install Dependencies
+npm install
+
+### 3. Start Metro Bundler
+npx react-native start
+
+## 4. Run on Android Device
+npx react-native run-android
+---
+📱 Make sure your emulator or physical Android device is connected.
+---
+## 📦 API Used
+-Get Tracking History of Employee:
+  -GET /LocationTrack/GetEmpl******ationTrack?empID={id}
+-Get Last Known Location:
+  -GET /LocationTrack/GetEmpl******ation?empID={id}
+---
+## 💼 Use Case Scenario
+-This project is built to simulate a real-world field staff tracking system, where:
+
+-Sales Executives carry a location tracking app.
+
+-Managers/Admins use this admin panel to monitor their movement.
+
+-All location data is timestamped and visualized using maps.
+
+-Ideal for companies in:
+
+-FMCG
+
+-Logistics & Courier
+
+-Field Sales
+
+-Marketing Teams
+---
+## 📫 Reach me:
+
+-📧 Email: nidhaandubey2@gmail.com
+
+-💼 LinkedIn: https://www.linkedin.com/in/nidhaan-dubey-73a790250/
