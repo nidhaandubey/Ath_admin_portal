@@ -124,53 +124,8 @@ Field Sales
 
 Marketing Teams
 
-👨‍💻 About Me
-Hi! I'm Nidhaan Dubey, a final-year B.Tech student and a passionate developer focused on building practical, scalable apps.
-
-🔧 I love working on:
-
-React & React Native
-
-MERN Stack
-
-Mobile + Web Hybrid Projects
-
-Real-world applications
-
 📫 Reach me:
 
-📧 Email: nidhaandubey@example.com
+📧 Email: nidhaandubey2@gmail.com
 
-💼 LinkedIn: linkedin.com/in/YOUR-USERNAME
-
-💡 I'm Open to Opportunities!
-I’m actively seeking:
-
-React Native Developer Internships
-
-Frontend Developer Roles (React / React Native)
-
-Full-Stack Developer Roles
-
-If you're a recruiter or hiring manager, feel free to reach out — I’d love to connect!
-
-⭐ GitHub Stats
-
-📄 License
-This project is for learning and demonstration purposes. Reach out to me if you want to collaborate or customize it further!
-
-yaml
-Copy
-Edit
-
----
-
-### 🔧 Final Checklist:
-
-- ✅ Place this file as `README.md` in your project root
-- ✅ Rename images to `dashboard.png` and `tracking.png` (if not done yet)
-- ✅ Push changes to GitHub:
-  ```bash
-  git add .
-  git commit -m "Added detailed README with screenshots"
-  git push
+💼 LinkedIn: https://www.linkedin.com/in/nidhaan-dubey-73a790250/
