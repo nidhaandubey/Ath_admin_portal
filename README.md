@@ -81,13 +81,13 @@ npx react-native run-android
 ---
 📱 Make sure your emulator or physical Android device is connected.
 ---
-##📦 API Used
+## 📦 API Used
 -Get Tracking History of Employee
 -GET /LocationTrack/GetEmpl******ationTrack?empID={id}
 -Get Last Known Location
 -GET /LocationTrack/GetEmpl******ation?empID={id}
 ---
-##💼 Use Case Scenario
+## 💼 Use Case Scenario
 -This project is built to simulate a real-world field staff tracking system, where:
 
 -Sales Executives carry a location tracking app.
@@ -106,7 +106,7 @@ npx react-native run-android
 
 -Marketing Teams
 ---
-##📫 Reach me:
+## 📫 Reach me:
 
 -📧 Email: nidhaandubey2@gmail.com
 
