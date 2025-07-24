@@ -62,10 +62,6 @@ Admin_ath/
 ├── android/
 └── README.md
 
-yaml
-Copy
-Edit
-
 ---
 
 ## ⚙️ How to Run the Project Locally
