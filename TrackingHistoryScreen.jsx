@@ -19,10 +19,28 @@ const TrackingHistoryScreen = ({ route }) => {
   const [locations, setLocations] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const fetchTrackingHistory = async () => {
+const fetchTrackingHistory = async () => {
     try {
       const response = await axios.get(`https://hrmapi.bahi-khata.in/LocationTrack/GetEmplLastLocation?empID=${empID}`);
-      setLocations(response.data);
+      const locationData = response.data;
+
+      const updatedLocations = await Promise.all(
+        locationData.map(async (item) => {
+          try {
+            const geoRes = await axios.get(
+              `https://nominatim.openstreetmap.org/reverse?format=jsonv2&lat=${item.lat}&lon=${item.long}`
+            );
+
+            const address = geoRes.data.display_name || 'Address not found';
+            return { ...item, location: address };
+          } catch (err) {
+            console.error('Reverse geocoding error:', err);
+            return { ...item, location: 'Unknown' };
+          }
+        })
+      );
+
+      setLocations(updatedLocations);
     } catch (error) {
       console.error('Error fetching location history:', error);
     } finally {
@@ -76,7 +94,7 @@ const TrackingHistoryScreen = ({ route }) => {
         <Text style={styles.historyTitle}>Location History</Text>
         {locations.map((item, index) => (
           <View key={index} style={styles.historyItem}>
-            <Text>📍 Lat: {item.lat}, Long: {item.long}</Text>
+            <Text>📍 {item.location}</Text>
             <Text>🕒 {new Date(item.trackDate).toLocaleString()}</Text>
           </View>
         ))}
