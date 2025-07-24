@@ -19,6 +19,7 @@ const TrackingHistoryScreen = ({ route }) => {
   const [locations, setLocations] = useState([]);
   const [loading, setLoading] = useState(true);
 
+  
 const fetchTrackingHistory = async () => {
     try {
       const response = await axios.get(`https://hrmapi.bahi-khata.in/LocationTrack/GetEmplLastLocation?empID=${empID}`);
