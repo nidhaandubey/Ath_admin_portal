@@ -6,12 +6,11 @@ A complete **Admin Tracking App** built using **React Native** that allows manag
 
 ## 📱 Screenshots
 
-### Dashboard – List of Employees
-<img src=".img/Screenshot 2025-07-24 110355.png" width="300"/>
+### 📋 Dashboard – List of Employees
+<img src="./img/dashboard.png" width="300"/>
 
-### Tracking History – Route on Map with History
-<img src=".img/Screenshot 2025-07-24 110444.png" width="300"/>
-
+### 🗺️ Tracking History – Route on Map
+<img src="./img/tracking.png" width="300"/>
 ---
 
 ## 🚀 Features
